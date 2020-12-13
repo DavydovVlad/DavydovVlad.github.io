@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="фавикон 16x16.png" type="image/png">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <title>Суши бар - Регистрация</title>
 <style>
    body {
@@ -18,6 +25,10 @@
   </style>
 </head>
 <body>
+<a class="nav__link" href="sign-in.html" style="position:absolute;right:5%;top:10%;font-size:30px;
+text-shadow: red 0 0 3px;">
+Войти
+</a>
 <header class="header">
 	<div class="container">
 		<div class="header__inner">
@@ -47,26 +58,29 @@
 </div>
 
 </div>
-<form>
-<div class = "col3-new" style="position:absolute, left:30%">
-  <div class="form-group">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" style="color:#ffffff">Введите email@</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Ваш email">
-    </div>
-    <div class="form-group col-md-6" style="padding-top:30px">
-      <label for="inputPassword4" style="color:#ffffff">Введите пароль</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder = "Пароль">
-    </div>
-	<div class="form-group col-md-6" style="padding-top:30px">
-    <label for="inputAddress" style="color:#ffffff">Адрес доставки</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Адрес">
-	</div>
-  </div>
- 
-  <button type="submit" class="btn btn-primary" style="background:#ff5903;font-size:15pt; border-color:#ff5903; font-weight:bold; position:absolute; left:170px;">GO</button>
+<form id="sign-up-form">
 
+<div class = "col3-new" style="position:absolute, left:30%">
+  
+    
+      <label for="inputEmail" style="color:#ffffff">Введите email@</label>
+      <input type="email" id="inputEmail" name="inputEmail" placeholder="Ваш email">
+    
+    <div style="padding-top:30px">
+      <label for="inputPassword" style="color:#ffffff">Введите пароль</label>
+      <input type="password" id="inputPassword" name="inputPassword" placeholder = "Пароль">
+    </div>
+	<div style="padding-top:30px">
+    <label for="inputAddress" style="color:#ffffff">Адрес доставки</label>
+    <input type="text" id="inputAddress" name="inputAddress" placeholder="Адрес">
+	</div>
+  
+ <div style="padding-top:10px;border-radius: 3px;">
+  <button type="submit" style="background:#ff5903;font-size:15pt; border-color:#ff5903; font-weight:bold; position:absolute; left:170px;">GO</button>
 </div>
+</div>
+
 </form>
+<script src="logic_form.js"></script>
 </body>
 </html>

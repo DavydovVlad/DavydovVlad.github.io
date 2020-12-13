@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
- <link rel="shortcut icon" href="фавикон 16x16.png" type="image/png">
-<title>Суши бар - О Нас</title>
- <style>
+<link rel="shortcut icon" href="фавикон 16x16.png" type="image/png">
+
+<title>Суши бар - Регистрация</title>
+<style>
    body {
      background: url(Screenshot_24.png) no-repeat;
    background-color: black;
@@ -20,9 +21,9 @@
 <body>
 <a class="nav__link" href="registration.html" style="position:absolute;right:5%;top:10%;font-size:30px;
 text-shadow: red 0 0 3px;">
-Регистрация / Войти
+Регистрация
 </a>
-
+<header class="header">
 	<div class="container">
 		<div class="header__inner">
 		<nav class="nav">
@@ -33,7 +34,7 @@ text-shadow: red 0 0 3px;">
 		</nav>
 		</div>
 	</div>
-
+</header>
 <div class = "layout" style = "visibility:hidden;">
 <div class = "col2">
 <ul class="products clearfix">
@@ -51,16 +52,24 @@ text-shadow: red 0 0 3px;">
 </div>
 
 </div>
-<div class = "col3-new">
-<div class="card-new">
-  <div class="card-body-new">
-Наш ресторан называется "Суши-бар". Открытие произошло недавно. Мы готовим великолепные суши и рекомендуем посетить наше заведение. Также вы можете заказать доставку ( информацию о доставке можно посмотреть в разделе "О доставке" )
-  </div>
+<form id="sign-up-form">
+
+<div class = "col3-new" style="position:absolute, left:30%">
+  
+    
+      <label for="inputEmail" style="color:#ffffff">Введите email@</label>
+      <input type="email" id="inputEmail" name="inputEmail" placeholder="Ваш email">
+    
+    <div style="padding-top:30px">
+      <label for="inputPassword" style="color:#ffffff">Введите пароль</label>
+      <input type="password" id="inputPassword" name="inputPassword" placeholder = "Пароль">
+    </div>  
+ <div style="padding-top:10px;border-radius: 3px;">
+  <button type="submit" style="background:#ff5903;font-size:15pt; border-color:#ff5903; font-weight:bold; position:absolute; left:170px;">GO</button>
+</div>
 </div>
 
-
-</div>
-
+</form>
 
 </body>
 </html>
